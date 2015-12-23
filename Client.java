@@ -14,11 +14,22 @@ public class Client
 		
 		cl.cc = new Paper[2];
 		
-		for(int i=0;i<2;i++)
-		{
-			cl.cc[i] = new Paper();
-			cl.cc[i].addCompoent(cl.Q);
-		}
+		
+			for(int i=0;i<2;i++)
+			{
+				cl.cc[i] = new Paper();
+				
+			}	
+			
+			for(int i=0;i<2;i++)
+			{
+				if(cl.cc[i] instanceof Compoent)
+				{
+					cl.cc[i].addCompoent(cl.Q);
+				}
+			}	
+		
+		
 		
 		if(cl.cc != null)
 		{
