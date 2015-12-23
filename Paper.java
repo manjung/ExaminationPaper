@@ -1,6 +1,7 @@
 package Examination;
 
 import java.util.ArrayList;
+import java.util.ListIterator;
 
 public class Paper extends Compoent{
 
@@ -19,13 +20,17 @@ public class Paper extends Compoent{
 	@Override
 	public void print() 
 	{
-		for(Compoent c:list)
+		ListIterator <Compoent> iterator = list.listIterator();
+		
+		while(iterator.hasNext())
 		{
+			Compoent c = iterator.next();
 			c.print();
-			
 		}
 		
 		
 	}
+
+	
 
 }
